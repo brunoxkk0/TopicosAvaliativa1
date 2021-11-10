@@ -6,7 +6,6 @@ describe("Filtro de Faturas", () => {
     test("Faturas Menor - 2000", () => {
 
         const data = faturas.slice(0,4);
-        console.log(data.length)
         const result = filtrarFaturas(data);
 
         expect(result).toHaveLength(2)
