@@ -20,7 +20,7 @@ const clientes = [
     {
         id: 3,
         nome: "Paulo",
-        data_inclusao: new Date("2019-03-01"),
+        data_inclusao: new Date("2021-09-28"),
         estado: "Bahia"
     },
     {
@@ -53,7 +53,7 @@ const faturas = [
     {
         codigo: "0001",
         valor: 39.3,
-        data: new Date("2021-02-11"),
+        data: new Date("2021-08-11"),
         cliente: {
             id: 0
         }
@@ -61,98 +61,101 @@ const faturas = [
     {
         codigo: "0002",
         valor: 1.35,
-        data: new Date("2021-02-11"),
+        data: new Date("2021-08-11"),
         cliente: {
             id: 1
         }
     },
     {
         codigo: "0003",
-        valor: 2676.7,
-        data: new Date("2021-02-11"),
+        valor: 2400.7,
+        data: new Date("2021-08-11"),
         cliente: {
-            id: 2
+            id: 0
         }
     },
     {
-        codigo: "0003",
-        valor: 2560.2,
+        codigo: "0004",
+        valor: 2001.2,
+        data: new Date("2021-08-11"),
+        cliente: {
+            id: 1
+        }
+    },
+    {
+        codigo: "0005",
+        valor: 2000,
+        data: new Date("2021-10-11"),
+        cliente: {
+            id: 4
+        }
+    },
+    {
+        codigo: "0006",
+        valor: 2258.3,
+        data: new Date("2021-10-11"),
+        cliente: {
+            id: 5
+        }
+    },
+    {
+        codigo: "0007",
+        valor: 2100.32,
+        data: new Date("2021-02-11"),
+        cliente: {
+            id: 6
+        }
+    },
+    {
+        codigo: "0008",
+        valor: 2463,
+        data: new Date("2021-02-11"),
+        cliente: {
+            id: 7
+        }
+    },
+    {
+        codigo: "0009",
+        valor: 2600,
         data: new Date("2021-02-11"),
         cliente: {
             id: 3
         }
     },
     {
-        codigo: "0004",
-        valor: 71,
-        data: new Date("2021-02-11"),
-        cliente: {
-            id: 4
-        }
-    },    {
-        codigo: "0005",
-        valor: 668.3,
-        data: new Date("2021-02-11"),
-        cliente: {
-            id: 5
-        }
-    },
-    {
-        codigo: "0006",
-        valor: 3387.32,
-        data: new Date("2021-02-11"),
-        cliente: {
-            id: 6
-        }
-    },
-    {
-        codigo: "0007",
-        valor: 78,
-        data: new Date("2021-02-11"),
-        cliente: {
-            id: 7
-        }
-    },
-    {
-        codigo: "0008",
-        valor: 30,
-        data: new Date("2021-02-11"),
-        cliente: {
-            id: 0
-        }
-    },
-    {
-        codigo: "0009",
-        valor: 2300,
-        data: new Date("2021-02-11"),
-        cliente: {
-            id: 2
-        }
-    },
-    {
         codigo: "0010",
-        valor: 2300.55,
+        valor: 2700,
+        data: new Date("2021-02-11"),
+        cliente: {
+            id: 3
+        }
+    },
+    {
+        codigo: "0011",
+        valor: 2800.55,
         data: new Date("2021-09-31"),
         cliente: {
             id: 7
         }
-    },    {
-        codigo: "0011",
-        valor: 7477.7,
+    },
+    {
+        codigo: "0012",
+        valor: 2999.7,
         data: new Date("2021-02-11"),
         cliente: {
             id: 6
         }
     },
     {
-        codigo: "0012",
+        codigo: "0013",
         valor: 3403.9,
         data: new Date("2021-08-11"),
         cliente: {
             id: 5
         }
-    },    {
-        codigo: "0013",
+    },
+    {
+        codigo: "0014",
         valor: 20004,
         data: new Date("2021-09-11"),
         cliente: {
@@ -160,7 +163,7 @@ const faturas = [
         }
     },
     {
-        codigo: "0014",
+        codigo: "0015",
         valor: 5304.36,
         data: new Date("2021-02-11"),
         cliente: {
@@ -168,7 +171,7 @@ const faturas = [
         }
     },
     {
-        codigo: "0015",
+        codigo: "0016",
         valor: 89788.12,
         data: new Date("2021-11-10"),
         cliente: {
@@ -176,6 +179,5 @@ const faturas = [
         }
     },
 ]
-
 exports.faturas = faturas;
 exports.clientes = clientes;

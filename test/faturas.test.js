@@ -1,31 +1,34 @@
 const {filtrarFaturas} = require("../src/faturas")
-const {clientes, faturas} = require("../data")
+const {faturas} = require("../data")
 
 describe("Filtro de Faturas", () => {
 
     test("Faturas Menor - 2000", () => {
 
-        const data = faturas.slice(0,3);
+        const data = faturas.slice(0,4);
+        console.log(data.length)
         const result = filtrarFaturas(data);
 
-        expect(result).toHaveLength(1)
+        expect(result).toHaveLength(2)
     })
 
     test("Faturas Entre - 2000 ~ 2500", () => {
 
-        const data = faturas.slice(0, faturas.length);
+        const data = faturas.slice(4, 8);
         const result = filtrarFaturas(data);
 
-        expect(result).toHaveLength(8)
+        expect(result).toHaveLength(2)
 
     })
 
     test("Faturas Entre - 2500 ~ 3000", () => {
 
-        const data = faturas.slice(0, faturas.length);
+        const data = faturas.slice(8, 12);
         const result = filtrarFaturas(data);
 
-        expect(result).toHaveLength(5)
+        console.log(result)
+
+        expect(result).toHaveLength(2)
 
     })
 
