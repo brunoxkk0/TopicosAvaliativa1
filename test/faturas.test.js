@@ -31,4 +31,15 @@ describe("Filtro de Faturas", () => {
 
     })
 
+    test("Faturas Entre - 4000", () => {
+
+        const data = faturas.slice(12, 16);
+        const result = filtrarFaturas(data);
+
+        console.log(result)
+
+        expect(result).toHaveLength(2)
+
+    })
+
 })

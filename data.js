@@ -179,5 +179,10 @@ const faturas = [
         }
     },
 ]
+
+const estados = [
+
+]
+
 exports.faturas = faturas;
 exports.clientes = clientes;
