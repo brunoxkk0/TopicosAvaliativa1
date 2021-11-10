@@ -5,18 +5,7 @@ filtrarFaturas = fatura => {
     fatura = fatura.filter(menor2000)
     fatura = fatura.filter(entre2000e2500eDataMenorIgualMesAnterior)
     fatura = fatura.filter(entre2500e3000eClienteMenorQue2MessesAtras)
-
-    fatura = fatura.filter(el => {
-
-        const cliente = clientes.find(c => c.id === el.cliente.id);
-        const regiao = unidades_federativas.find(e => e.estado === cliente.estado).regiao
-
-        if(el.valor > 4000){
-            return !(regiao === "Sul")
-        }
-
-        return true;
-    })
+    fatura = fatura.filter(acima4000eRegiaoSul)
 
     return fatura;
 }
@@ -32,6 +21,12 @@ const entre2000e2500eDataMenorIgualMesAnterior = fatura => {
 const entre2500e3000eClienteMenorQue2MessesAtras = fatura => {
     const cliente = clientes.find(c => c.id === fatura.cliente.id);
     return !((fatura.valor >= 2500 && fatura.valor <= 3000) && (cliente.data_inclusao.getTime() >= voltaMesses(2).getTime()))
+}
+
+const acima4000eRegiaoSul = fatura => {
+    const cliente = clientes.find(c => c.id === fatura.cliente.id);
+    const regiao = unidades_federativas.find(e => e.estado === cliente.estado).regiao
+    return !(fatura.valor > 4000 && regiao === "Sul")
 }
 
 const mesAnterior = () => {
