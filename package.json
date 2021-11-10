@@ -1,0 +1,22 @@
+{
+  "name": "topicosavaliativa1",
+  "version": "1.0.0",
+  "description": "Atividade avaliativa 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoxkk0/TopicosAvaliativa1.git"
+  },
+  "author": "brunoxkk0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunoxkk0/TopicosAvaliativa1/issues"
+  },
+  "homepage": "https://github.com/brunoxkk0/TopicosAvaliativa1#readme",
+  "dependencies": {
+    "jest": "^27.3.1"
+  }
+}
