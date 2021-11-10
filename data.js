@@ -68,7 +68,7 @@ const faturas = [
     },
     {
         codigo: "0003",
-        valor: 10.7,
+        valor: 2676.7,
         data: new Date("2021-02-11"),
         cliente: {
             id: 2
@@ -76,7 +76,7 @@ const faturas = [
     },
     {
         codigo: "0003",
-        valor: 22.2,
+        valor: 2560.2,
         data: new Date("2021-02-11"),
         cliente: {
             id: 3

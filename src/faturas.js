@@ -1,3 +1,4 @@
+const {clientes} = require("../data")
 
 filtrarFaturas = fatura => {
 
