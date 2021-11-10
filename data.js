@@ -15,7 +15,7 @@ const clientes = [
         id: 2,
         nome: "José",
         data_inclusao: new Date("2019-04-24"),
-        estado: "Minas Gerais"
+        estado: "Paraná"
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const clientes = [
         id: 4,
         nome: "Carla",
         data_inclusao: new Date("2019-03-01"),
-        estado: "Amazonas"
+        estado: "Santa Catarina"
     },
     {
         id: 5,
@@ -148,10 +148,10 @@ const faturas = [
     },
     {
         codigo: "0013",
-        valor: 3403.9,
+        valor: 6403.9,
         data: new Date("2021-08-11"),
         cliente: {
-            id: 5
+            id: 1
         }
     },
     {
@@ -159,7 +159,7 @@ const faturas = [
         valor: 20004,
         data: new Date("2021-09-11"),
         cliente: {
-            id: 5
+            id: 3
         }
     },
     {
@@ -180,9 +180,117 @@ const faturas = [
     },
 ]
 
-const estados = [
-
+const unidades_federativas = [
+    {
+        estado: "Amazonas",
+        regiao: "Norte"
+    },
+    {
+        estado: "Roraima",
+        regiao: "Norte"
+    },
+    {
+        estado: "Amapá",
+        regiao: "Norte"
+    },
+    {
+        estado: "Pará",
+        regiao: "Norte"
+    },
+    {
+        estado: "Tocantins",
+        regiao: "Norte"
+    },
+    {
+        estado: "Rondônia",
+        regiao: "Norte"
+    },
+    {
+        estado: "Acre",
+        regiao: "Norte"
+    },
+    {
+        estado: "Maranhão",
+        regiao: "Nordeste"
+    },
+    {
+        estado: "Piauí",
+        regiao: "Nordeste"
+    },
+    {
+        estado: "Ceará",
+        regiao: "Nordeste"
+    },
+    {
+        estado: "Rio Grande do Norte",
+        regiao: "Nordeste"
+    },
+    {
+        estado: "Pernambuco",
+        regiao: "Nordeste"
+    },
+    {
+        estado: "Paraíba",
+        regiao: "Nordeste"
+    },
+    {
+        estado: "Sergipe",
+        regiao: "Nordeste"
+    },
+    {
+        estado: "Alagoas",
+        regiao: "Nordeste"
+    },
+    {
+        estado: "Bahia",
+        regiao: "Nordeste"
+    },
+    {
+        estado: "Mato Grosso",
+        regiao: "Centro-Oeste"
+    },
+    {
+        estado: "Mato Grosso do Sul",
+        regiao: "Centro-Oeste"
+    },
+    {
+        estado: "Goiás",
+        regiao: "Centro-Oeste"
+    },
+    {
+        estado: "Distrito Federal",
+        regiao: "Centro-Oeste"
+    },
+    {
+        estado: "São Paulo",
+        regiao: "Sudeste"
+    },
+    {
+        estado: "Rio de Janeiro",
+        regiao: "Sudeste"
+    },
+    {
+        estado: "Espírito Santo",
+        regiao: "Sudeste"
+    },
+    {
+        estado: "Minas Gerais",
+        regiao: "Sudeste"
+    },
+    {
+        estado: "Paraná",
+        regiao: "Sul"
+    },
+    {
+        estado: "Rio Grande do Sul",
+        regiao: "Sul"
+    },
+    {
+        estado: "Santa Catarina",
+        regiao: "Sul"
+    }
 ]
 
 exports.faturas = faturas;
 exports.clientes = clientes;
+exports.unidades_federativas = unidades_federativas;

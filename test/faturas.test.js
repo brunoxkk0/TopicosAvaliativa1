@@ -25,8 +25,6 @@ describe("Filtro de Faturas", () => {
         const data = faturas.slice(8, 12);
         const result = filtrarFaturas(data);
 
-        console.log(result)
-
         expect(result).toHaveLength(2)
 
     })
@@ -35,8 +33,6 @@ describe("Filtro de Faturas", () => {
 
         const data = faturas.slice(12, 16);
         const result = filtrarFaturas(data);
-
-        console.log(result)
 
         expect(result).toHaveLength(2)
 

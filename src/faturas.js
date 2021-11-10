@@ -1,4 +1,4 @@
-const {clientes} = require("../data")
+const {clientes, unidades_federativas} = require("../data")
 
 filtrarFaturas = fatura => {
 
@@ -6,16 +6,17 @@ filtrarFaturas = fatura => {
     fatura = fatura.filter(entre2000e2500eDataMenorIgualMesAnterior)
     fatura = fatura.filter(entre2500e3000eClienteMenorQue2MessesAtras)
 
-    // fatura = fatura.filter(el => {
-    //
-    //     const cliente = clientes.find(c => c.id === el.cliente.id);
-    //
-    //     if(el.valor >= 2500 && el.valor <= 3000){
-    //         return !(cliente.data_inclusao.getTime() >= voltaMesses(2).getTime())
-    //     }
-    //
-    //     return true;
-    // })
+    fatura = fatura.filter(el => {
+
+        const cliente = clientes.find(c => c.id === el.cliente.id);
+        const regiao = unidades_federativas.find(e => e.estado === cliente.estado).regiao
+
+        if(el.valor > 4000){
+            return !(regiao === "Sul")
+        }
+
+        return true;
+    })
 
     return fatura;
 }
