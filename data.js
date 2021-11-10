@@ -123,7 +123,7 @@ const faturas = [
     },
     {
         codigo: "0009",
-        valor: 14,
+        valor: 2300,
         data: new Date("2021-02-11"),
         cliente: {
             id: 2
@@ -131,14 +131,14 @@ const faturas = [
     },
     {
         codigo: "0010",
-        valor: 385.55,
-        data: new Date("2021-02-11"),
+        valor: 2300.55,
+        data: new Date("2021-09-31"),
         cliente: {
             id: 7
         }
     },    {
         codigo: "0011",
-        valor: 777.7,
+        valor: 7477.7,
         data: new Date("2021-02-11"),
         cliente: {
             id: 6
@@ -146,22 +146,22 @@ const faturas = [
     },
     {
         codigo: "0012",
-        valor: 343.9,
-        data: new Date("2021-02-11"),
+        valor: 3403.9,
+        data: new Date("2021-08-11"),
         cliente: {
             id: 5
         }
     },    {
         codigo: "0013",
-        valor: 24,
-        data: new Date("2021-02-11"),
+        valor: 20004,
+        data: new Date("2021-09-11"),
         cliente: {
             id: 5
         }
     },
     {
         codigo: "0014",
-        valor: 534.36,
+        valor: 5304.36,
         data: new Date("2021-02-11"),
         cliente: {
             id: 2
@@ -170,7 +170,7 @@ const faturas = [
     {
         codigo: "0015",
         valor: 89788.12,
-        data: new Date("2021-02-11"),
+        data: new Date("2021-11-10"),
         cliente: {
             id: 4
         }
