@@ -38,4 +38,12 @@ describe("Filtro de Faturas", () => {
 
     })
 
+    test("Teste final", () => {
+
+        const result = filtrarFaturas(faturas);
+
+        expect(result).toHaveLength(8)
+
+    })
+
 })
